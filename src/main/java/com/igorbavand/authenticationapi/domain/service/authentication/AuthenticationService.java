@@ -1,7 +1,6 @@
 package com.igorbavand.authenticationapi.domain.service.authentication;
 
 import com.igorbavand.authenticationapi.api.dto.user.UserResponseDto;
-import com.igorbavand.authenticationapi.domain.User;
 import com.igorbavand.authenticationapi.domain.exception.exception.NotFoundException;
 import com.igorbavand.authenticationapi.domain.service.user.UserService;
 import lombok.RequiredArgsConstructor;
