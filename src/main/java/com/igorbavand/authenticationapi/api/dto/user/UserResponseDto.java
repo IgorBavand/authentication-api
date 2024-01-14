@@ -4,4 +4,4 @@ import com.igorbavand.authenticationapi.domain.enums.EUserRole;
 
 import java.time.LocalDateTime;
 
-public record UserResponseDto(String id, String login, EUserRole role, LocalDateTime createdAt, LocalDateTime updatedAt) { }
+public record UserResponseDto(Integer id, String login, EUserRole role, LocalDateTime createdAt, LocalDateTime updatedAt) { }

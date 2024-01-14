@@ -1,15 +1,14 @@
 package com.igorbavand.authenticationapi.api.controller;
 
-import com.igorbavand.authenticationapi.domain.service.TokenService;
-import com.igorbavand.authenticationapi.domain.service.authentication.AuthenticationService;
-import com.igorbavand.authenticationapi.domain.service.user.UserService;
 import com.igorbavand.authenticationapi.api.dto.authentication.AuthenticationDto;
 import com.igorbavand.authenticationapi.api.dto.authentication.TokenResponseDto;
 import com.igorbavand.authenticationapi.api.dto.user.RegisterDto;
 import com.igorbavand.authenticationapi.domain.User;
+import com.igorbavand.authenticationapi.domain.service.TokenService;
+import com.igorbavand.authenticationapi.domain.service.authentication.AuthenticationService;
+import com.igorbavand.authenticationapi.domain.service.user.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;

@@ -26,11 +26,11 @@ public class UserService {
     }
 
     public User findByLogin(String login) {
-        return repository.findByLoginIgnoreCase(login).orElseThrow(() -> new NotFoundException("User not found."));
+        return repository.findByLogin(login).orElseThrow(() -> new NotFoundException("User not found."));
     }
 
     private void validateExistingUser(String login) {
-        if(this.repository.findByLoginIgnoreCase(login).isPresent()) {
+        if(this.repository.findByLogin(login).isPresent()) {
             throw new BadRequestException("User already registred.");
         }
     }

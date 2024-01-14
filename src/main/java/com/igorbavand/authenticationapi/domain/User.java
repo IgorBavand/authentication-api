@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.cglib.core.Local;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -27,10 +26,17 @@ import java.util.List;
 @EntityListeners(AuditingEntityListener.class)
 public class User implements UserDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    @Column(length = 255)
     private String login;
+
+    @Column(length = 255)
     private String password;
+
+    @Column(length = 255)
+    @Enumerated(EnumType.STRING)
     private EUserRole role;
 
     @CreatedDate
