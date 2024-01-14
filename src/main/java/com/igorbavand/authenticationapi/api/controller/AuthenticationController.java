@@ -7,13 +7,14 @@ import com.igorbavand.authenticationapi.domain.User;
 import com.igorbavand.authenticationapi.domain.service.TokenService;
 import com.igorbavand.authenticationapi.domain.service.authentication.AuthenticationService;
 import com.igorbavand.authenticationapi.domain.service.user.UserService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.web.bind.annotation.*;
+
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("api/auth")

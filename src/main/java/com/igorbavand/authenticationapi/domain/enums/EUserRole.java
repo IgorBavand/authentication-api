@@ -6,11 +6,11 @@ public enum EUserRole {
 
     private String role;
 
-    EUserRole(String role){
+    EUserRole(String role) {
         this.role = role;
     }
 
-    public String getRole(){
+    public String getRole() {
         return role;
     }
 }

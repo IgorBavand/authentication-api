@@ -30,7 +30,7 @@ public class UserService {
     }
 
     private void validateExistingUser(String login) {
-        if(this.repository.findByLogin(login).isPresent()) {
+        if (this.repository.findByLogin(login).isPresent()) {
             throw new BadRequestException("User already registred.");
         }
     }

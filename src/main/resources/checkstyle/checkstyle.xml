@@ -19,7 +19,6 @@
     <module name="FileTabCharacter">
         <property name="eachLine" value="true"/>
     </module>
-    <module name="NewlineAtEndOfFile"/>
     <module name="LineLength">
         <property name="fileExtensions" value="java"/>
         <property name="max" value="150"/>
@@ -41,7 +40,6 @@
             <property name="allowByTailComment" value="true"/>
             <property name="allowNonPrintableEscapes" value="true"/>
         </module>
-        <module name="AvoidStarImport"/>
         <module name="OneTopLevelClass"/>
         <module name="NoLineWrap"/>
         <module name="EmptyBlock">
@@ -50,19 +48,11 @@
                       value="LITERAL_TRY, LITERAL_FINALLY, LITERAL_IF, LITERAL_ELSE, LITERAL_SWITCH"/>
         </module>
         <module name="NeedBraces"/>
-        <module name="LeftCurly"/>
+        <module name="RightCurly"/>
         <module name="RightCurly">
-            <property name="id" value="RightCurlySame"/>
-            <property name="tokens"
-                      value="LITERAL_TRY, LITERAL_CATCH, LITERAL_FINALLY, LITERAL_IF, LITERAL_ELSE,
-                    LITERAL_DO"/>
-        </module>
-        <module name="RightCurly">
-            <property name="id" value="RightCurlyAlone"/>
             <property name="option" value="alone"/>
             <property name="tokens"
-                      value="CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT,
-                    INSTANCE_INIT"/>
+                      value="CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, LITERAL_DO, STATIC_INIT, INSTANCE_INIT"/>
         </module>
         <module name="WhitespaceAround">
             <property name="allowEmptyConstructors" value="true"/>
@@ -187,9 +177,10 @@
         </module>
         <module name="VariableDeclarationUsageDistance"/>
         <module name="CustomImportOrder">
-            <property name="sortImportsInGroupAlphabetically" value="true"/>
+            <property name="sortImportsInGroupAlphabetically" value="false"/>
             <property name="separateLineBetweenGroups" value="true"/>
-            <property name="customImportOrderRules" value="STATIC###THIRD_PARTY_PACKAGE"/>
+            <property name="customImportOrderRules" value="THIRD_PARTY_PACKAGE###STANDARD_JAVA_PACKAGE###STATIC"/>
+            <property name="standardPackageRegExp" value="^(java|jakarta|javax)\."/>
         </module>
         <module name="MethodParamPad"/>
         <module name="NoWhitespaceBefore">
@@ -238,13 +229,11 @@
             <property name="exceptionVariableName" value="expected"/>
         </module>
         <module name="CommentsIndentation"/>
-        <module name="MagicNumber">
-            <property name="ignoreNumbers" value="0, 0.5, 1"/>
-            <property name="ignoreFieldDeclaration" value="true"/>
+
+        <module name="MagicNumberCheck">
             <property name="ignoreAnnotation" value="true"/>
-            <property name="constantWaiverParentToken"
-                      value="TYPECAST, METHOD_CALL, EXPR, ARRAY_INIT, UNARY_MINUS, UNARY_PLUS, ELIST, STAR, ASSIGN, PLUS, MINUS, DIV, LITERAL_NEW, DOT"/>
         </module>
+
         <module name="ConstantName"/>
         <module name="CyclomaticComplexity">
             <property name="max" value="10"/>
@@ -252,7 +241,6 @@
         <module name="DefaultComesLast"/>
         <module name="EqualsAvoidNull"/>
         <module name="EqualsHashCode"/>
-        <module name="FinalLocalVariable"/>
         <module name="IllegalCatch"/>
         <module name="IllegalThrows"/>
         <module name="InterfaceTypeParameterName">
