@@ -1,9 +1,9 @@
-package com.igorbavand.authenticationapi.domain.service;
+package com.igorbavand.authenticationapi.application.service;
 
 import com.igorbavand.authenticationapi.domain.Role;
 import com.igorbavand.authenticationapi.domain.User;
-import com.igorbavand.authenticationapi.domain.exception.exception.NotFoundException;
-import com.igorbavand.authenticationapi.infra.repository.UserRepository;
+import com.igorbavand.authenticationapi.shared.exception.exception.NotFoundException;
+import com.igorbavand.authenticationapi.infrastructure.repository.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 

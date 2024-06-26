@@ -1,4 +1,4 @@
-package com.igorbavand.authenticationapi.infra.utils;
+package com.igorbavand.authenticationapi.infrastructure.utils;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

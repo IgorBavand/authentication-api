@@ -1,9 +1,9 @@
-package com.igorbavand.authenticationapi.domain.service;
+package com.igorbavand.authenticationapi.application.service;
 
 
 import com.igorbavand.authenticationapi.domain.RefreshToken;
-import com.igorbavand.authenticationapi.domain.exception.exception.BadRequestException;
-import com.igorbavand.authenticationapi.infra.repository.RefreshTokenRepository;
+import com.igorbavand.authenticationapi.shared.exception.exception.BadRequestException;
+import com.igorbavand.authenticationapi.infrastructure.repository.RefreshTokenRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;

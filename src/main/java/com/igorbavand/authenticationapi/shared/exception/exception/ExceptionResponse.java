@@ -1,4 +1,4 @@
-package com.igorbavand.authenticationapi.domain.exception.exception;
+package com.igorbavand.authenticationapi.shared.exception.exception;
 
 public class ExceptionResponse {
 

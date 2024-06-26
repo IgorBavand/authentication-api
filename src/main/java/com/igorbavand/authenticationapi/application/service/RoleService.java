@@ -1,8 +1,8 @@
-package com.igorbavand.authenticationapi.domain.service;
+package com.igorbavand.authenticationapi.application.service;
 
 import com.igorbavand.authenticationapi.domain.Role;
-import com.igorbavand.authenticationapi.domain.exception.exception.NotFoundException;
-import com.igorbavand.authenticationapi.infra.repository.RoleRepository;
+import com.igorbavand.authenticationapi.shared.exception.exception.NotFoundException;
+import com.igorbavand.authenticationapi.infrastructure.repository.RoleRepository;
 import org.springframework.stereotype.Service;
 
 @Service

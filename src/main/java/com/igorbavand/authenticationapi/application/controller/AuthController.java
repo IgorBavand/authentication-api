@@ -1,14 +1,12 @@
-package com.igorbavand.authenticationapi.api.controller;
+package com.igorbavand.authenticationapi.application.controller;
 
-import com.igorbavand.authenticationapi.api.dto.AuthenticationRequest;
-import com.igorbavand.authenticationapi.api.dto.TokenRefreshRequest;
-import com.igorbavand.authenticationapi.api.dto.TokenRefreshResponse;
-import com.igorbavand.authenticationapi.domain.RefreshToken;
+import com.igorbavand.authenticationapi.application.dto.AuthenticationRequest;
+import com.igorbavand.authenticationapi.application.dto.TokenRefreshRequest;
 import com.igorbavand.authenticationapi.domain.User;
-import com.igorbavand.authenticationapi.domain.service.AuthService;
-import com.igorbavand.authenticationapi.domain.service.RefreshTokenService;
-import com.igorbavand.authenticationapi.domain.service.UserService;
-import com.igorbavand.authenticationapi.infra.utils.JwtUtil;
+import com.igorbavand.authenticationapi.application.service.AuthService;
+import com.igorbavand.authenticationapi.application.service.RefreshTokenService;
+import com.igorbavand.authenticationapi.application.service.UserService;
+import com.igorbavand.authenticationapi.infrastructure.utils.JwtUtil;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.userdetails.UserDetailsService;

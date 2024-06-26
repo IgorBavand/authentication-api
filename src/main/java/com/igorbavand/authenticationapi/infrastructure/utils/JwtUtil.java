@@ -1,4 +1,4 @@
-package com.igorbavand.authenticationapi.infra.utils;
+package com.igorbavand.authenticationapi.infrastructure.utils;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

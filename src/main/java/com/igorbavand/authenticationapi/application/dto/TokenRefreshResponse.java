@@ -1,4 +1,4 @@
-package com.igorbavand.authenticationapi.api.dto;
+package com.igorbavand.authenticationapi.application.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

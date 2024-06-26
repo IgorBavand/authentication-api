@@ -1,4 +1,4 @@
-package com.igorbavand.authenticationapi.infra.repository;
+package com.igorbavand.authenticationapi.infrastructure.repository;
 
 import com.igorbavand.authenticationapi.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;

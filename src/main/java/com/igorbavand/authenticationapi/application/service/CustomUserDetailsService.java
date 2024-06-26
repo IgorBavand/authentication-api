@@ -1,8 +1,8 @@
-package com.igorbavand.authenticationapi.domain.service;
+package com.igorbavand.authenticationapi.application.service;
 
 
 import com.igorbavand.authenticationapi.domain.User;
-import com.igorbavand.authenticationapi.infra.repository.UserRepository;
+import com.igorbavand.authenticationapi.infrastructure.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

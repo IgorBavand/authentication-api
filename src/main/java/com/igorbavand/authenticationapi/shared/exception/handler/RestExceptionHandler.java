@@ -1,8 +1,8 @@
-package com.igorbavand.authenticationapi.domain.exception.handler;
+package com.igorbavand.authenticationapi.shared.exception.handler;
 
-import com.igorbavand.authenticationapi.domain.exception.exception.BadRequestException;
-import com.igorbavand.authenticationapi.domain.exception.exception.ExceptionResponse;
-import com.igorbavand.authenticationapi.domain.exception.exception.NotFoundException;
+import com.igorbavand.authenticationapi.shared.exception.exception.BadRequestException;
+import com.igorbavand.authenticationapi.shared.exception.exception.ExceptionResponse;
+import com.igorbavand.authenticationapi.shared.exception.exception.NotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler;
 import org.springframework.http.HttpHeaders;

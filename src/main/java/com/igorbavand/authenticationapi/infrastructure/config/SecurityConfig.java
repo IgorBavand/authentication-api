@@ -1,6 +1,6 @@
-package com.igorbavand.authenticationapi.api.config;
+package com.igorbavand.authenticationapi.infrastructure.config;
 
-import com.igorbavand.authenticationapi.infra.utils.JwtRequestFilter;
+import com.igorbavand.authenticationapi.infrastructure.utils.JwtRequestFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
