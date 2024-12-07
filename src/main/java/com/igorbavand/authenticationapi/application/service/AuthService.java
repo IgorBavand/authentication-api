@@ -1,9 +1,6 @@
 package com.igorbavand.authenticationapi.application.service;
 
-import com.igorbavand.authenticationapi.application.dto.AuthenticationRequest;
-import com.igorbavand.authenticationapi.application.dto.AuthenticationResponse;
-import com.igorbavand.authenticationapi.application.dto.TokenRefreshRequest;
-import com.igorbavand.authenticationapi.application.dto.TokenRefreshResponse;
+import com.igorbavand.authenticationapi.application.dto.*;
 import com.igorbavand.authenticationapi.domain.RefreshToken;
 import com.igorbavand.authenticationapi.domain.User;
 import com.igorbavand.authenticationapi.infrastructure.utils.JwtUtil;
@@ -42,7 +39,7 @@ public class AuthService {
         User user = userService.findByUsername(authenticationRequest.getUsername());
         RefreshToken refreshToken = refreshTokenService.createRefreshToken(user.getId());
 
-        return ResponseEntity.ok(new AuthenticationResponse(jwt, refreshToken.getToken()));
+        return ResponseEntity.ok(new AuthenticationResponse(jwt, refreshToken.getToken(), new UserResponse(jwt)));
     }
 
     public ResponseEntity<?> refreshToken(TokenRefreshRequest request) {
